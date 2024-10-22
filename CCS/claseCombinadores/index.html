@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinadores</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <fieldset>
+      <legend><b>Adjacent Siblings</b></legend>
+      <p>
+        Este combinador nos permite agregar estilos a un elemento que tenga
+        seguido de él el elemento que le digamos en el selector.
+      </p>
+      <div class="adjacent-sibling">
+        <h2>Soy un h2</h2>
+        <p>Soy un p</p>
+        <h2>soy un h2</h2>
+        <h3>Soy un h3</h3>
+        <p>Soy un p</p>
+        <h2>Soy un h2</h2>
+        <p>Soy un p</p>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend><b>General Sibling</b></legend>
+      <p>
+        Este tipo de combinador nos ayuda a seleccionar a los hermanos
+        generales, es decir a los que comparten un mismo padre. Se representa
+        mediante el siguiente simbolo ** ~ ** y se implementa asi.
+      </p>
+      <div class="general-sibling">
+        <h2>Soy un h2</h2>
+        <p>Soy un p</p>
+        <h2>soy un h2</h2>
+        <h3>Soy un h3</h3>
+        <p>Soy un p</p>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend><b>Child</b></legend>
+      <p>
+        The child combinator (>) se coloca entre dos selectores CSS. Solo
+        coincide con los elementos que coinciden con el segundo selector que son
+        hijos directos de los elementos que coinciden con el primero.
+      </p>
+      <div class="child">
+        <article>
+          <p>soy un texto</p>
+        </article>
+        <article>
+          <p>soy un texto</p>
+        </article>
+        <section>
+          <div>
+            <p>soy un texto</p>
+          </div>
+        </section>
+        <p>soy un texto</p>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend><b>Descendent</b></legend>
+      <p>
+        The descendant combinator , típicamente representado por un único
+        carácter de espacio ( ), combina dos selectores de modo que los
+        elementos que coinciden con el segundo selector se seleccionan si tienen
+        un elemento antepasado (padre, padre del padre, padre del padre, etc.)
+        que coincida con el primer selector. Los selectores que utilizan un
+        combinador descendiente se denominan selectores descendientes ..
+      </p>
+      <div class="descendent">
+        <article>
+          <p>soy un texto</p>
+        </article>
+        <article>
+          <p>soy un texto</p>
+        </article>
+        <section>
+          <div>
+            <p>soy un texto</p>
+          </div>
+        </section>
+        <p>soy un texto</p>
+      </div>
+    </fieldset>
+  </body>
+</html>

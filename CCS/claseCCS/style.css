@@ -1,0 +1,18 @@
+/*TIPOS DE SELECTORES*/
+
+/*SELECTOR POR ELEMENTO*/
+p {
+  color: blue;
+  font-size: 40px;
+}
+
+/* SELECTOR POR CLASE */
+.parrafo {
+  color: red;
+}
+
+/* SELECTOR POR ID*/
+#texto {
+  color: yellow;
+  font-size: 24px;
+}

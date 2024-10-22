@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <fieldset>
+      <legend><b>display:block</b></legend>
+      <p>
+        El contenido del elemento toma el 100% del width, se puede usar margin y
+        padding por todos los lados.
+      </p>
+      <div class="block-element">Esta en una etiqueta div</div>
+      <p class="block-element">Esta es una etiqueta de parrafo</p>
+      <div class="block-element">
+        <p class="parrafo">Soy texto</p>
+        <p class="parrafo">Soy texto</p>
+        <p class="parrafo">Soy texto</p>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend><b>display:inline</b></legend>
+      <p>
+        Utiliza el espacio que tiene su contenido, y si queda espacio acomoda
+        por delante el siguiente elemento. No se puede usar margin ni padding
+        arriba ni abajo, solo derecha e izquierda. Tampoco se puede aplicar
+        width o height.
+      </p>
+      <span>Soy una etiqueta span</span>
+      <span>Soy una etiqueta span</span>
+    </fieldset>
+    <fieldset>
+      <legend><b>display: inline-block</b></legend>
+      <p>
+        Se puede usar margin y padding por todos lados, así como darle width y
+        height, y el contenido es del mismo tamaño que el elemento.
+      </p>
+      <ul class="nav">
+        <li>Home</li>
+        <li>Cursos</li>
+        <li>Instructores</li>
+        <li>Blog</li>
+      </ul>
+    </fieldset>
+  </body>
+</html>
